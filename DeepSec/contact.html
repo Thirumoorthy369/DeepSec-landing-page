@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSec - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Navbar with Hamburger Menu -->
+    <nav class="bg-gray-800 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-cyan-400">DeepSec</h1>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button id="hamburger-btn" class="text-gray-300 hover:text-cyan-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="nav-menu" class="hidden md:flex md:items-center md:space-x-4">
+                    <a href="index.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="services.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                    <a href="about.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="testimonials.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+                    <a href="projects.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="courses.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Courses</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <div class="flex flex-col space-y-2 px-4 py-4">
+                <a href="index.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="services.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                <a href="about.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="testimonials.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+                <a href="projects.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                <a href="courses.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Courses</a>
+                <a href="contact.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-gradient-to-r from-gray-900 to-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Get in Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-cyan-400 mb-6">Send Us a Message</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                        <div id="form-progress" class="bg-cyan-500 h-2.5 rounded-full" style="width: 0%"></div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-300">Full Name</label>
+                            <input type="text" id="name" class="w-full p-2 bg-gray-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300">Email</label>
+                            <input type="email" id="email" class="w-full p-2 bg-gray-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-300">Message</label>
+                            <textarea id="message" rows="4" class="w-full p-2 bg-gray-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500" required></textarea>
+                        </div>
+                        <button id="submit-form" class="w-full bg-cyan-500 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-600 transition duration-300">Send Message</button>
+                    </div>
+                </div>
+                <!-- Contact Info and Map -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-cyan-400 mb-6">Contact Information</h3>
+                    <p class="text-gray-300 mb-4"><strong>Address:</strong> 123 Cyber Lane, Coimbatore, Tamil Nadu, India</p>
+                    <p class="text-gray-300 mb-4"><strong>Email:</strong> contact@deepsec.com</p>
+                    <p class="text-gray-300 mb-4"><strong>Phone:</strong> +91 123-456-7890</p>
+                    <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+                        <p class="text-gray-300 text-center">[Interactive Map Placeholder]</p>
+                        <!-- Normally, an embedded Google Map would go here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-cyan-400 mb-4">DeepSec</h3>
+                    <p class="text-gray-300">Advanced cybersecurity solutions to protect your business from evolving digital threats.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-cyan-400 mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-cyan-400">Penetration Testing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-cyan-400">Managed Security</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-cyan-400">Threat Intelligence</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-cyan-400">Cloud Security</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-cyan-400">Security Training</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-cyan-400 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-cyan-400">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-cyan-400">Whitepapers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-cyan-400">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-cyan-400">Security Reports</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-cyan-400">Webinars</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-cyan-400 mb-4">Subscribe</h3>
+                    <p class="text-gray-300 mb-2">Get the latest security insights and updates.</p>
+                    <div class="flex">
+                        <input type="email" id="newsletter-email" placeholder="Your email" class="w-full p-2 bg-gray-700 rounded-l-md text-gray-100 focus:outline-none">
+                        <button id="newsletter-btn" class="bg-cyan-500 text-gray-900 px-4 py-2 rounded-r-md hover:bg-cyan-600 transition duration-300">➔</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 flex justify-between items-center">
+                <p class="text-gray-500">© 2025 DeepSec. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="social-icon text-gray-300 hover:text-cyan-400 transform hover:scale-125 transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4.56c-.89.39-1.84.65-2.83.77a4.92 4.92 0 0 0 2.16-2.72c-.95.56-2 .97-3.12 1.19a4.9 4.9 0 0 0-8.34 4.47A13.9 13.9 0 0 1 1.64 3.16a4.9 4.9 0 0 0 1.52 6.54c-.79-.02-1.53-.24-2.17-.6v.06a4.9 4.9 0 0 0 3.93 4.8 4.9 4.9 0 0 1-2.21.08 4.9 4.9 0 0 0 4.58 3.4A9.84 9.84 0 0 1 0 19.54a13.9 13.9 0 0 0 7.55 2.21c9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63A9.93 9.93 0 0 0 24 4.56z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon text-gray-300 hover:text-cyan-400 transform hover:scale-125 transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.38 8.6 8.6 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.91A12.14 12.14 0 0 1 1.43 2.78a4.28 4.28 0 0 0 1.33 5.71 4.27 4.27 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.44 4.2 4.28 4.28 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.97A8.58 8.58 0 0 1 0 17.1a12.12 12.12 0 0 0 6.6 1.93c7.92 0 12.25-6.56 12.25-12.25 0-.19 0-.37-.01-.55A8.7 8.7 0 0 0 22.46 6z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon text-gray-300 hover:text-cyan-400 transform hover:scale-125 transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.04c-5.52 0-10 4.48-10 10 0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.61.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.82c.85.004 1.71.11 2.52.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.39.2 2.42.1 2.67.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.04c0-5.52-4.48-10-10-10z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-5 right-5 bg-cyan-500 text-gray-900 p-3 rounded-full shadow-lg hover:bg-cyan-600 transition duration-300 hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- Live Chat -->
+    <div class="fixed bottom-5 right-5 z-50">
+        <button id="chat-toggle" class="bg-cyan-500 text-gray-900 p-4 rounded-full shadow-lg hover:bg-cyan-600 transition duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+            </svg>
+        </button>
+        <div id="chat-box" class="hidden absolute bottom-16 right-0 bg-gray-800 p-4 rounded-lg shadow-lg w-64">
+            <p class="text-gray-300">Welcome to DeepSec! How can we assist you today?</p>
+            <input type="text" placeholder="Type a message..." class="w-full mt-2 p-2 bg-gray-700 rounded-md text-gray-100 focus:outline-none">
+            <button class="mt-2 bg-cyan-500 text-gray-900 px-4 py-2 rounded-md w-full hover:bg-cyan-600 transition duration-300">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Flip Card Styles */
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bounce Animation for Scroll Indicator */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Hamburger Menu Animation */
+#hamburger-btn svg {
+    transition: transform 0.3s ease;
+}
+
+#hamburger-btn.active svg {
+    transform: rotate(90deg);
+}
+
+#mobile-menu {
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#mobile-menu.active {
+    max-height: 500px;
+}
+
+/* Chat Box Animation */
+#chat-box {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+#chat-box.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Newsletter Button Hover */
+#newsletter-btn {
+    transition: transform 0.3s ease;
+}
+
+#newsletter-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Back to Top Button */
+#back-to-top {
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+}
+
+/* Testimonial Carousel */
+#testimonial-carousel .flex {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Registration Modal */
+#registration-modal {
+    transition: opacity 0.3s ease;
+}
+
+#registration-modal.active {
+    opacity: 1;
+}
+
+/* Project Modal */
+#project-modal {
+    transition: opacity 0.3s ease;
+}
+
+#project-modal.active {
+    opacity: 1;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
